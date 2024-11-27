@@ -77,6 +77,7 @@ a {
  
  .linkContainer{
      border-top: 2px transparent solid; 
+     
  }
  
  .linkContainer:hover{
@@ -273,9 +274,13 @@ a {
     border: 2px #d9d9d9 solid;
     border-radius: 25px;
     padding: 15px 19px; 
-    font-size: 17px;
+    font-size: 14px;
     display: flex;
     gap: 10px;  
+}
+
+.filterButtonTitle {
+    font-weight: bold;
 }
 
 .filterTitle {
@@ -378,10 +383,14 @@ a {
 .sectionActivitesCard img {
     width: 297px;
     height: 380px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;      
+    
 }
 
+.sectionActivitesCard {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
 
 .marseilleCard {
    display: flex;
@@ -405,6 +414,7 @@ a {
     display: flex;
     flex-direction: row;
     padding: 20px;
+    margin-top: 60px;
 }
 
 .columnContainer {
@@ -513,8 +523,15 @@ a {
     align-items: center;
 }
 
+.headerLink {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+}
+
 .linkContainer {
     border-bottom: 2px transparent solid;
+    width: 100%;
 }
 
 .linkContainer:hover {
@@ -525,6 +542,8 @@ a {
 
 .container {
     padding-bottom: 50px;
+    width: 100%;
+    gap: 0;
 }
 .searchInput {
     width: 100%;
@@ -567,6 +586,9 @@ a {
     height: 140px;
      
  }
+.hbgt {
+    display: inline;
+}
 
 .hbgCard {
     flex-direction: column; 

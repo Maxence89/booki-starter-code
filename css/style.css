@@ -390,12 +390,19 @@ a {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .marseilleCard {
    display: flex;
    justify-content: space-between;
    padding-left: 28px;
+}
+
+.marseilleCard a {
+    flex: 1;
+    max-width: 297px;
 }
 
 .activites {
@@ -499,7 +506,9 @@ a {
         margin: 10px;  
     }
 
-
+    .marseilleCard {
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -601,7 +610,7 @@ a {
 }
     
 .hebergements {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF !important;
 }
 
 .marseilleCard {
@@ -613,6 +622,7 @@ a {
 
 .marseilleCard > a {
     width: 100%;
+    max-width: 100%;
 }
 
 .activitesTitle {
@@ -628,5 +638,19 @@ a {
     display: flex;
     flex: 1;
 }
+.columnContainer {
+    width: 100%;
+}
 }
 
+@media (min-width: 768px) and (max-width: 1348px) {
+
+    .sectionActivitesCard img {
+        width: 194px;
+        height: 200px;
+    }
+    .marseilleCard a {
+        max-width: 194px;
+    }
+
+}
